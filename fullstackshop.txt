@@ -1,0 +1,115 @@
+import * as promtSync from 'prompt-sync';
+const prompt= promtSync();
+console.log(".......hello.....");
+const name = prompt("name plzz..");
+console.log(name);
+let product_1:[String,number,number]=["rice",20,70];
+let product_2:[String,number,number]=["wheat",25,50];
+let product_3:[String,number,number]=["salt",30,25];
+let product_4:[String,number,number]=["sugar",20,42];
+let product_5:[String,number,number]=["oil",20,110];
+
+
+
+while(1){
+console.log("rice --- 1 --- price 70");
+console.log("wheat --- 2 --- price 50");
+console.log("salt --- 3 --- price 25");
+console.log("sugar --- 4 --- price 42");
+console.log("oil --- 5 --- price 110");
+let ch =prompt("enter your product");
+let num;
+switch(ch){
+case '1':
+    ch=prompt("enter the quantity");
+    num=Number(ch);
+    if(num>product_1[1]){
+        console.log("the product available stock is");
+        console.log(product_1[1]);
+        break;
+    }
+    else{
+        console.log("your product is available\n");
+        product_1[1]=product_1[1]-num;
+        num=num*product_1[2];
+        console.log(num);
+        console.log("thank you\n");
+    }
+    break;
+    case '2':
+    ch=prompt("enter the quantity");
+    num=Number(ch);
+    if(num>product_2[1]){
+        console.log("the product available stock is");
+        console.log(product_2[1]);
+        break;
+    }
+    else{
+        console.log("your product is available\n");
+        product_2[1]=product_2[1]-num;
+        num=num*product_2[2];
+        console.log(num);
+        console.log("thank you\n");
+    }
+    break;
+    case '3':
+    ch=prompt("enter the quantity");
+    num=Number(ch);
+    if(num>product_3[1]){
+        console.log("the product available stock is");
+        console.log(product_3[1]);
+        break;
+    }
+    else{
+        console.log("your product is available\n");
+        product_3[1]=product_3[1]-num;
+        num=num*product_3[2];
+        console.log(num);
+        console.log("thank you\n");
+    }
+    break;
+    case '4':
+    ch=prompt("enter the quantity");
+    num=Number(ch);
+    if(num>product_4[1]){
+        console.log("the product available stock is");
+        console.log(product_4[1]);
+        break;
+    }
+    else{
+        console.log("your product is available\n");
+        product_4[1]=product_4[1]-num;
+        num=num*product_4[2];
+        console.log(num);
+        console.log("thank you\n");
+    }
+    break;
+
+    case '5':
+    ch=prompt("enter the quantity");
+    num=Number(ch);
+    if(num>product_5[1]){
+        console.log("the product available stock is");
+        console.log(product_5[1]);
+        break;
+    }
+    else{
+        console.log("your product is available\n");
+        product_5[1]=product_5[1]-num;
+        num=num*product_5[2];
+        console.log(num);
+        console.log("thank you\n");
+    }
+    break;
+    default:
+        {
+console.log("enter the valid input\n");
+        }
+}
+
+
+
+}
+
+
+
