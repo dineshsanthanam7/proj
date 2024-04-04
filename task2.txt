@@ -1,0 +1,156 @@
+import * as promtSync from 'prompt-sync';
+const prompt= promtSync();
+console.log(".......hello.....");
+const name = prompt("name plzz..");
+console.log(name);
+
+let subj_1:[String,number,number,number]=["fullstack",90,0,0];
+let subj_2:[String,number,number,number]=["database technology",75,0,0];
+let subj_3:[String,number,number,number]=["software enginerring",75,0,0];
+
+
+
+while(1){
+
+    console.log("1---- to enter attendance\n");
+    console.log("2---- to get the info\n");
+let chh=prompt("plz enter\n");
+switch(chh){
+case '1':
+
+console.log("1----- fullstack");
+    console.log("2----- database technology");
+    console.log("3----- software engineering");
+
+    let ch =prompt("enter your subject");
+    let num;
+    switch(ch){   
+        case '1':
+            let att1=prompt("enter the number of hours\n")
+            num=Number(att1);
+            let att=prompt("enter 1 for present and 2 for absent");
+            if(att=='1' ){
+                console.log(subj_1[0]);
+                console.log("your attendance in the subject\n");
+                subj_1[2]=subj_1[2]+num;
+                console.log(subj_1[2]);
+                console.log("thanking you..");
+      
+            }
+            else if(att=='2')
+            {
+                console.log(subj_1[0]);
+                console.log("your absent hours in the subject\n");
+                subj_1[3]=subj_1[3]+num;
+                console.log(subj_1[3]);
+                num=(subj_1[3]/subj_1[1])*100;
+                if(num>20){
+                    console.log("your are getting poor in attendance\n");
+                    console.log(num);
+                }
+
+
+
+                console.log("thanking you...\n");
+
+            }
+            else {
+
+console.log("invalid input\n");
+            }
+            break;
+            case '2':
+            
+            let att2=prompt("enter the number of hours\n")
+            num=Number(att2);
+            let att3=prompt("enter 1 for present and 2 for absent");
+            if(att3=='1' ){
+                console.log(subj_2[0]);
+                console.log("your attendance in the subject\n");
+                subj_2[2]=subj_1[2]+num;
+                console.log(subj_2[2]);
+                console.log("thanking you..");
+      
+            }
+            else if(att3=='2')
+            {
+                console.log(subj_1[0]);
+                console.log("your absent hours in the subject\n");
+                subj_2[3]=subj_2[3]+num;
+                console.log(subj_2[3]);
+                num=(subj_2[3]/subj_2[1])*100;
+                if(num>20){
+                    console.log("your are getting poor in attendance\n");
+                    console.log(num);
+                }
+
+
+
+                console.log("thanking you...\n");
+
+            }
+            else {
+
+console.log("invalid input\n");
+            }
+            break;
+
+
+
+            case '3':
+            
+            let att4=prompt("enter the number of hours\n")
+            num=Number(att4);
+            let att5=prompt("enter 1 for present and 2 for absent");
+            if(att5=='1' ){
+                console.log(subj_3[0]);
+                console.log("your attendance in the subject\n");
+                subj_3[2]=subj_3[2]+num;
+                console.log(subj_3[2]);
+                console.log("thanking you..");
+      
+            }
+            else if(att5=='2')
+            {
+                console.log(subj_3[0]);
+                console.log("your absent hours in the subject\n");
+                subj_3[3]=subj_3[3]+num;
+                console.log(subj_3[3]);
+                num=(subj_3[3]/subj_3[1])*100;
+                if(num>20){
+                    console.log("your are getting poor in attendance\n");
+                    console.log(num);
+                }
+
+
+
+                console.log("thanking you...\n");
+
+            }
+            else {
+
+console.log("invalid input\n");
+            }
+            break;
+   
+    }
+
+
+}
+
+    
+
+
+
+
+}
+
+
+
+    
+
+
+
+
+
+
